@@ -1,0 +1,11 @@
+.container{
+    position: relative;
+}
+.main{
+    position: absolute;
+    left: 200px;
+    width: calc(100% - 200px);
+    height: 120vh;
+    border: 1px solid red;
+
+}
