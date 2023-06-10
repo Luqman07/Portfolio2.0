@@ -1,0 +1,24 @@
+@import '../../App.css';
+
+.btn{
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 14px;
+    border: 1px solid lightgray;
+    background-color: transparent;
+    line-height: normal;
+}
+.btn:nth-child(1){
+    margin-right: 1rem;
+    background-color: var(--main-bg-color);
+}
+.btn:nth-child(1):hover{
+    background-color: transparent;
+}
+.btn:hover{
+    background-color: var(--main-bg-color);
+}

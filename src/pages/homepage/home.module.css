@@ -1,0 +1,31 @@
+@import '../../App.css';
+.container{
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pageTitle{
+    font-size: 48px;
+    font-weight: 600;
+    color: #161616;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+}
+.pageText{
+    width: 80%;
+    line-height: 29px;
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+.d_none{
+    display: none;
+}
+@media screen and (max-width: 900px){
+    .d_none{
+        display: inline;
+    }
+}
