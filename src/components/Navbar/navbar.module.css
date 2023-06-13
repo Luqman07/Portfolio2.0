@@ -1,0 +1,12 @@
+.container {
+  background-color: var(--main-bg-color);
+  height: 70px;
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

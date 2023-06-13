@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import MainLayout from "./layout/MainLayout";
@@ -7,7 +7,6 @@ import About from "./pages/about";
 import Contact from "./pages/contact";
 
 function App() {
-
   
   return (
     <>

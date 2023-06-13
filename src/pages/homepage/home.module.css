@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 2rem;
 }
 .pageTitle{
     font-size: 48px;

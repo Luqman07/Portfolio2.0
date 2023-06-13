@@ -1,24 +1,17 @@
 import React from "react";
 import styles from "./home.module.css";
 import Button from "../../components/Button";
-import { useNavigate, useOutletContext } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-type ContextType = {
-  open: boolean;
-  isVisible: boolean;
-  setOpen: (bool: boolean) => void;
-  setIsVisible: (bool: boolean) => void;
-};
+
 const Homepage = () => {
   const navigate = useNavigate();
-  const { open, isVisible, setOpen, setIsVisible } =
-    useOutletContext<ContextType>();
   const navigateTo = () => {
     navigate("/contact");
   };
   return (
     <div className={styles.container}>
-      <div style={{ width: "70%" }}>
+      <div style={{ maxWidth: "700px" }}>
         <h1 className={styles.pageTitle}>
           Hi I'm Luqman,
           <br /> I am a Frontend Developer
@@ -35,15 +28,6 @@ const Homepage = () => {
           </p>
           <div>
             <Button handleClick={navigateTo}>Contact Me</Button>
-            <span className={styles.d_none}>
-              <Button
-                handleClick={() => {
-                  setOpen(!open);
-                }}
-              >
-                {open ? "Close" : "Open"}
-              </Button>
-            </span>
             <Button>Email</Button>
           </div>
         </section>
